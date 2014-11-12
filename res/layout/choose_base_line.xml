@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+	<LinearLayout
+	    android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:background="#00A3D9">
+        
+	    <TextView
+	        android:id="@+id/choose_base_line_title"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="20sp"
+	        android:textColor="#FFFFFF"
+	        android:text="@string/choose_base_line_title"/>
+	    	    	    
+    </LinearLayout>
+    
+	<LinearLayout
+	    android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:background="#000000"
+        android:gravity="center"
+        android:orientation="horizontal">
+        
+	    <LinearLayout
+	        android:id="@+id/choose_base_ginza"
+	    	android:layout_width="0dp"
+        	android:layout_height="fill_parent"
+        	android:layout_weight="1"
+        	android:background="#EEEEEE"
+        	android:gravity="center"
+        	android:orientation="horizontal"
+        	android:onClick="onClickGinza">
+        	<TextView
+	        	android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:textSize="20sp"
+	        	android:textColor="#000000"
+	        	android:text="@string/ginza_string"/>
+		</LinearLayout>
+		
+	  	<LinearLayout
+	  	    android:id="@+id/choose_base_marunouchi"
+	    	android:layout_width="0dp"
+        	android:layout_height="fill_parent"
+        	android:layout_weight="1"
+        	android:background="#FFFFFF"
+        	android:gravity="center"
+        	android:orientation="horizontal"
+        	android:onClick="onClickMarunouchi">
+        	<TextView
+	        	android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:textSize="20sp"
+	        	android:textColor="#000000"
+	        	android:text="@string/marunouchi_string"/>
+		</LinearLayout>	    	    
+	    
+	  	<LinearLayout
+	  	    android:id="@+id/choose_base_hibiya"
+	    	android:layout_width="0dp"
+        	android:layout_height="fill_parent"
+        	android:layout_weight="1"
+        	android:background="#EEEEEE"
+        	android:gravity="center"
+        	android:orientation="horizontal"
+        	android:onClick="onClickHibiya">
+        	<TextView
+	        	android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:textSize="20sp"
+	        	android:textColor="#000000"
+	        	android:text="@string/hibiya_string"/>
+		</LinearLayout>
+	  	
+	</LinearLayout>
+	
+	<LinearLayout
+	    android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:orientation="horizontal">
+        
+	    <LinearLayout
+	        android:id="@+id/choose_base_tozai"
+	    	android:layout_width="0dp"
+        	android:layout_height="fill_parent"
+        	android:layout_weight="1"
+        	android:background="#FFFFFF"
+        	android:gravity="center"
+        	android:orientation="horizontal"
+        	android:onClick="onClickTozai">
+        	<TextView
+	        	android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:textSize="20sp"
+	        	android:textColor="#000000"
+	        	android:text="@string/tozai_string"/>
+		</LinearLayout>
+		
+	  	<LinearLayout
+	  	    android:id="@+id/choose_base_chiyoda"
+	    	android:layout_width="0dp"
+        	android:layout_height="fill_parent"
+        	android:layout_weight="1"
+        	android:background="#EEEEEE"
+        	android:gravity="center"
+        	android:orientation="horizontal"
+        	android:onClick="onClickChiyoda">
+        	<TextView
+	        	android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:textSize="20sp"
+	        	android:textColor="#000000"
+	        	android:text="@string/chiyoda_string"/>
+		</LinearLayout>	    	    
+	    
+	  	<LinearLayout
+	  	    android:id="@+id/choose_base_yurakucho"
+	    	android:layout_width="0dp"
+        	android:layout_height="fill_parent"
+        	android:layout_weight="1"
+        	android:background="#FFFFFF"
+        	android:gravity="center"
+        	android:orientation="horizontal"
+        	android:onClick="onClickYurakucho">
+        	<TextView
+	        	android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:textSize="20sp"
+	        	android:textColor="#000000"
+	        	android:text="@string/yurakucho_string"/>
+		</LinearLayout>
+		
+    </LinearLayout>
+	
+	<LinearLayout
+	    android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:background="#000000"
+        android:gravity="center"
+        android:orientation="horizontal">
+        
+	    <LinearLayout
+	        android:id="@+id/choose_base_hanzomon"
+	    	android:layout_width="0dp"
+        	android:layout_height="fill_parent"
+        	android:layout_weight="1"
+        	android:background="#EEEEEE"
+        	android:gravity="center"
+        	android:orientation="horizontal"
+        	android:onClick="onClickHanzomon">
+        	<TextView
+	        	android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:textSize="20sp"
+	        	android:textColor="#000000"
+	        	android:text="@string/hanzomon_string"/>
+		</LinearLayout>
+		
+	  	<LinearLayout
+	  	    android:id="@+id/choose_base_nanboku"
+	    	android:layout_width="0dp"
+        	android:layout_height="fill_parent"
+        	android:layout_weight="1"
+        	android:background="#FFFFFF"
+        	android:gravity="center"
+        	android:orientation="horizontal"
+        	android:onClick="onClickNanboku">
+        	<TextView
+	        	android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:textSize="20sp"
+	        	android:textColor="#000000"
+	        	android:text="@string/nanboku_string"/>
+		</LinearLayout>	    	    
+	    
+	  	<LinearLayout
+	  	    android:id="@+id/choose_base_hukutoshin"
+	    	android:layout_width="0dp"
+        	android:layout_height="fill_parent"
+        	android:layout_weight="1"
+        	android:background="#EEEEEE"
+        	android:gravity="center"
+        	android:orientation="horizontal"
+        	android:onClick="onClickHukutoshin">
+        	<TextView
+	        	android:layout_width="wrap_content"
+	        	android:layout_height="wrap_content"
+	        	android:textSize="20sp"
+	        	android:textColor="#000000"
+	        	android:text="@string/hukutoshin_string"/>
+		</LinearLayout>
+        
+    </LinearLayout>
+    
+</LinearLayout>

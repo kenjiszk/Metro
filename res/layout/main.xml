@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF" >
+
+    <RelativeLayout
+        android:id="@+id/TopLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:background="#00A3D9">
+        
+        <LinearLayout
+        	android:layout_width="match_parent"
+        	android:layout_height="match_parent"
+        	android:orientation="horizontal" >
+        	
+            <ImageView
+                android:id="@+id/line_mark"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:contentDescription="画像"
+                android:layout_marginBottom="15dp"
+				android:layout_marginLeft="15dp"
+        		android:layout_marginRight="15dp"
+        		android:layout_marginTop="15dp"
+                />
+            
+            <LinearLayout
+        		android:layout_width="match_parent"
+        		android:layout_height="match_parent"
+        		android:orientation="vertical" >
+        		
+                <LinearLayout
+        			android:layout_width="match_parent"
+        			android:layout_height="0dp"
+        			android:layout_weight="1"
+        			android:orientation="horizontal" >
+        			
+                    <TextView
+                		android:id="@+id/point_label_key"
+                		android:layout_height="match_parent"
+                		android:layout_width="100dp"
+                		android:text="@string/point_label_key"
+                		android:gravity="center_vertical"
+                		android:textColor="#FFFFFF"/>
+                    
+                    <TextView
+                		android:id="@+id/point_label_value"
+                		android:layout_height="match_parent"
+                		android:layout_width="100dp"
+                		android:text="@string/point_label_value"
+                		android:gravity="center"
+                		android:textColor="#FFFFFF"/>
+                    
+                </LinearLayout>
+                
+                <LinearLayout
+        			android:layout_width="match_parent"
+        			android:layout_height="0dp"
+        			android:layout_weight="1"
+        			android:orientation="horizontal" >
+                    
+                    <TextView
+                		android:id="@+id/people_label_key"
+                		android:layout_height="match_parent"
+                		android:layout_width="100dp"
+                		android:text="@string/people_label_key"
+                		android:gravity="center_vertical"
+                		android:textColor="#FFFFFF"/>
+                    
+                    <TextView
+                		android:id="@+id/people_label_value"
+                		android:layout_height="match_parent"
+                		android:layout_width="100dp"
+                		android:text="@string/people_label_value"
+                		android:gravity="center"
+                		android:textColor="#FFFFFF"/>
+        			
+                </LinearLayout>
+                
+                <LinearLayout
+        			android:layout_width="match_parent"
+        			android:layout_height="0dp"
+        			android:layout_weight="1"
+        			android:orientation="horizontal" >
+                    
+                    <TextView
+                		android:id="@+id/ranking_label_key"
+                		android:layout_height="match_parent"
+                		android:layout_width="100dp"
+                		android:text="@string/ranking_label_key"
+                		android:gravity="center_vertical"
+                		android:textColor="#FFFFFF"/>
+                    
+                    <TextView
+                		android:id="@+id/ranking_label_value"
+                		android:layout_height="match_parent"
+                		android:layout_width="100dp"
+                		android:text="@string/ranking_label_value"
+                		android:gravity="center"
+                		android:textColor="#FFFFFF"/>
+        			
+                </LinearLayout>
+        		
+            </LinearLayout>
+            
+        </LinearLayout>	
+        
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/BottomLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:background="#DDDDDD">
+        
+        <LinearLayout
+        	android:layout_width="match_parent"
+        	android:layout_height="match_parent"
+        	android:orientation="horizontal" >
+        	
+        	<Button
+                android:id="@+id/CheckinButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+				android:layout_marginBottom="4dp"
+				android:layout_marginLeft="4dp"
+        		android:layout_marginRight="2dp"
+        		android:layout_marginTop="4dp"
+                android:background="#00A3D9"
+                android:textColor="#FFFFFF"
+                android:text="CHECK IN STATION"
+                android:onClick="onClickCheckIn"/>
+
+            <Button
+                android:id="@+id/OperationButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+               	android:layout_marginBottom="4dp"
+				android:layout_marginLeft="2dp"
+        		android:layout_marginRight="2dp"
+        		android:layout_marginTop="4dp"
+                android:background="#00A3D9"
+                android:textColor="#FFFFFF"
+                android:text="OPERATION" />
+
+            <Button
+                android:id="@+id/RankingButton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginBottom="4dp"
+				android:layout_marginLeft="2dp"
+        		android:layout_marginRight="4dp"
+        		android:layout_marginTop="4dp"
+                android:background="#00A3D9"
+                android:textColor="#FFFFFF"
+                android:text="CHECK RANKING" />
+            
+ 		 </LinearLayout>
+                    
+    </RelativeLayout>
+        
+    <RelativeLayout
+        android:id="@+id/ContentLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/BottomLayout"
+        android:layout_below="@id/TopLayout"
+        android:background="#FFFFFF"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp">
+        
+        <TextView
+        	android:id="@+id/delay_info_title"
+        	android:layout_width="fill_parent"
+        	android:layout_height="30dp"
+        	android:textSize="25sp"
+        	android:text="DELAY INFO" />
+       
+        <ScrollView
+            android:id="@+id/delay_info_content"
+        	android:layout_width="fill_parent"
+        	android:layout_height="fill_parent"
+        	android:layout_below="@id/delay_info_title"
+        	android:background="@drawable/scrollview_background" >
+            
+        </ScrollView>
+       
+    </RelativeLayout>
+    
+</RelativeLayout>
