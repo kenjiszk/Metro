@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/IntroCenterLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#FFFFFF"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical">
+        
+        <LinearLayout
+        	android:id="@+id/IntroContentLayout"
+        	android:layout_width="fill_parent"
+        	android:layout_height="0dp"
+        	android:layout_weight="3"
+        	android:orientation="vertical">
+        	
+            <TextView
+        		android:id="@+id/IntroContentLayoutTitle"
+        		android:layout_width="fill_parent"
+        		android:layout_height="25dp"
+        		android:textSize="20sp"
+        		android:textColor="#555555"
+        		android:focusable="true"
+				android:focusableInTouchMode="true"
+        		android:text="遊び方" />
+       
+        	<ScrollView
+            	android:id="@+id/IntroContentLayoutScrollView"
+        		android:layout_width="fill_parent"
+        		android:layout_height="fill_parent"
+        		android:background="@drawable/scrollview_background" >
+        		
+        	    <LinearLayout
+        			android:id="@+id/IntroContentLayoutScrollViewText"
+        			android:layout_width="fill_parent"
+        			android:layout_height="fill_parent"
+        			android:orientation="vertical"
+        			android:gravity="center"
+        			android:layout_marginBottom="20dp"
+					android:layout_marginLeft="0dp"
+        			android:layout_marginRight="0dp"
+        			android:layout_marginTop="20dp">
+        			
+        	        <TextView
+        	            android:layout_width="match_parent"
+                		android:layout_height="wrap_content"
+                		android:text="日本が世界に誇る地下鉄・東京メトロ"
+                		android:textSize="20sp"
+        				android:textColor="#555555"
+                		android:layout_marginBottom="5dp"
+						android:layout_marginLeft="10dp"
+        				android:layout_marginRight="10dp"
+        				android:layout_marginTop="5dp"/>
+        	        <TextView
+        	            android:layout_width="match_parent"
+                		android:layout_height="wrap_content"
+                		android:text="驚くべきはそのダイアの正確さ"
+                		android:textSize="20sp"
+        				android:textColor="#555555"
+                		android:layout_marginBottom="5dp"
+						android:layout_marginLeft="10dp"
+        				android:layout_marginRight="10dp"
+        				android:layout_marginTop="5dp"/>
+        	        <TextView
+        	            android:layout_width="match_parent"
+                		android:layout_height="wrap_content"
+                		android:text="この正確なダイアを利用したリアル連動型新感覚カジュアルゲームです"
+                		android:textSize="20sp"
+        				android:textColor="#555555"
+                		android:layout_marginBottom="5dp"
+						android:layout_marginLeft="10dp"
+        				android:layout_marginRight="10dp"
+        				android:layout_marginTop="5dp"/>
+        	        <TextView
+        	            android:layout_width="match_parent"
+                		android:layout_height="wrap_content"
+                		android:text="ゲームを開始するとまずは1000ポイントが付与されます"
+                		android:textSize="20sp"
+        				android:textColor="#555555"
+                		android:layout_marginBottom="5dp"
+						android:layout_marginLeft="10dp"
+        				android:layout_marginRight="10dp"
+        				android:layout_marginTop="5dp"/>
+        	        <TextView
+        	            android:layout_width="match_parent"
+                		android:layout_height="wrap_content"
+                		android:text="このポイントをメトロの運用情報を利用して増やしていきましょう"
+                		android:textSize="20sp"
+        				android:textColor="#555555"
+                		android:layout_marginBottom="5dp"
+						android:layout_marginLeft="10dp"
+        				android:layout_marginRight="10dp"
+        				android:layout_marginTop="5dp"/>
+        	        <TextView
+        	            android:layout_width="match_parent"
+                		android:layout_height="wrap_content"
+                		android:text="遊び方"
+                		android:textSize="20sp"
+        				android:textColor="#555555"
+                		android:layout_marginBottom="5dp"
+						android:layout_marginLeft="10dp"
+        				android:layout_marginRight="10dp"
+        				android:layout_marginTop="5dp"/>
+        	        <TextView
+        	            android:layout_width="match_parent"
+                		android:layout_height="wrap_content"
+                		android:text="１、スタートボタンを押すと、東京メトロ駅一覧画面に遷移しますので、遅延が起こらなそうな駅を選んでタップし、ポイントをベットしてください。"
+                		android:textSize="20sp"
+        				android:textColor="#555555"
+                		android:layout_marginBottom="5dp"
+						android:layout_marginLeft="10dp"
+        				android:layout_marginRight="10dp"
+        				android:layout_marginTop="5dp"/>
+        	        <TextView
+        	            android:layout_width="match_parent"
+                		android:layout_height="wrap_content"
+                		android:text="２、選んだ駅で遅延が起こらなければ一時間ごとにポイントが１％増えます。現在のポイントはトップ画面の'選択中の駅'に表示されています。"
+                		android:textSize="20sp"
+        				android:textColor="#555555"
+                		android:layout_marginBottom="5dp"
+						android:layout_marginLeft="10dp"
+        				android:layout_marginRight="10dp"
+        				android:layout_marginTop="5dp"/>
+        	        <TextView
+        	            android:layout_width="match_parent"
+                		android:layout_height="wrap_content"
+                		android:text="３、遅延が起きてしまった場合はベットしたポイントは０になります。"
+                		android:textSize="20sp"
+        				android:textColor="#555555"
+                		android:layout_marginBottom="5dp"
+						android:layout_marginLeft="10dp"
+        				android:layout_marginRight="10dp"
+        				android:layout_marginTop="5dp"/>
+        	        <TextView
+        	            android:layout_width="match_parent"
+                		android:layout_height="wrap_content"
+                		android:text="４、遅延が起きる前に増えたポイントを回収してポイント総計をみんなで競い合いましょう。回収したい時は、'選択中の駅'に表示されている項目をタップしてください。"
+                		android:textSize="20sp"
+        				android:textColor="#555555"
+                		android:layout_marginBottom="5dp"
+						android:layout_marginLeft="10dp"
+        				android:layout_marginRight="10dp"
+        				android:layout_marginTop="5dp"/>
+        	        <TextView
+        	            android:layout_width="match_parent"
+                		android:layout_height="wrap_content"
+                		android:text="５、駅は最大で10個までベット可能です。トップ画面の'ベットしましょう'をタップすると東京メトロ駅一覧画面に遷移し新たに選択する事が出来ます。"
+                		android:textSize="20sp"
+        				android:textColor="#555555"
+                		android:layout_marginBottom="5dp"
+						android:layout_marginLeft="10dp"
+        				android:layout_marginRight="10dp"
+        				android:layout_marginTop="5dp"/>
+        	        <TextView
+        	            android:layout_width="match_parent"
+                		android:layout_height="wrap_content"
+                		android:text="ポイントが０になった場合は、ある条件で出現している'いいね！'ボタンを押すと良い事があるかも！？"
+                		android:textSize="20sp"
+        				android:textColor="#555555"
+                		android:layout_marginBottom="5dp"
+						android:layout_marginLeft="10dp"
+        				android:layout_marginRight="10dp"
+        				android:layout_marginTop="5dp"/>
+        	        <TextView
+        	            android:layout_width="match_parent"
+                		android:layout_height="wrap_content"
+                		android:text="まずはニックネームを入力してゲームを始めましょう"
+                		android:textSize="20sp"
+        				android:textColor="#555555"
+                		android:layout_marginBottom="5dp"
+						android:layout_marginLeft="10dp"
+        				android:layout_marginRight="10dp"
+        				android:layout_marginTop="5dp"/>
+        	        
+        	    </LinearLayout>
+            
+	        </ScrollView>
+            
+        </LinearLayout>
+        
+        <LinearLayout
+        	android:layout_width="fill_parent"
+        	android:layout_height="0dp"
+        	android:layout_weight="1"
+        	android:orientation="vertical">
+        	
+            <EditText
+            	android:id="@+id/NicknameEditText"
+           		android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+				android:layout_marginLeft="10dp"
+        		android:layout_marginRight="10dp"
+        		android:layout_marginTop="5dp"
+                android:hint="ニックネームを入力"
+               	android:inputType="text" >
+            </EditText>
+            
+            <Button 
+               	android:id="@+id/NicknameEditButton"
+        		android:layout_width="match_parent"
+        		android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+				android:layout_marginLeft="10dp"
+        		android:layout_marginRight="10dp"
+        		android:layout_marginTop="5dp"
+        		android:background="#00A3D9"
+        		android:textColor="#FFFFFF"
+        		android:text="スタート"
+        		android:onClick="onClickNicknameButton"/>
+        	
+        </LinearLayout>
+                    
+    </LinearLayout>
+    
+</LinearLayout>

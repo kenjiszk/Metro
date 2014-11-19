@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/TopLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:background="#00A3D9"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        
+        <LinearLayout
+        	android:layout_width="match_parent"
+        	android:layout_height="match_parent"
+        	android:orientation="horizontal" >
+        	
+            <TextView
+                android:id="@+id/RankingBack"
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="戻る"
+                android:gravity="center"
+                android:textColor="#FFFFFF"/>
+            
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:text="東京メトロ駅一覧"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"/>
+            
+        </LinearLayout>
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/CenterLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:background="#FFFFFF"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical">
+        
+        <LinearLayout
+        	android:id="@+id/DelayContentLayout"
+        	android:layout_width="fill_parent"
+        	android:layout_height="0dp"
+        	android:layout_weight="1"
+        	android:orientation="vertical">
+        	
+            <TextView
+        		android:id="@+id/DelayContentLayoutTitle"
+        		android:layout_width="fill_parent"
+        		android:layout_height="25dp"
+        		android:textSize="15sp"
+        		android:textColor="#555555"
+        		android:text="遅延が起こらなそうな駅をタップしましょう" />
+       
+        	<ScrollView
+            	android:id="@+id/DelayContentLayoutScrollView"
+        		android:layout_width="fill_parent"
+        		android:layout_height="fill_parent"
+        		android:background="@drawable/scrollview_background" >
+                
+        	    <LinearLayout
+        			android:layout_width="fill_parent"
+        			android:layout_height="fill_parent"
+        			android:orientation="vertical">
+                    
+        	        <LinearLayout
+        				android:layout_width="fill_parent"
+        				android:layout_height="fill_parent"
+        				android:orientation="vertical">
+        				
+        	           <LinearLayout
+        	                android:id="@+id/BetListGinza"
+        					android:layout_width="fill_parent"
+        					android:layout_height="fill_parent"
+        					android:orientation="vertical">
+        					
+        	            </LinearLayout>
+        				
+        			</LinearLayout>
+        			
+        	        <LinearLayout
+        				android:layout_width="fill_parent"
+        				android:layout_height="fill_parent"
+        				android:orientation="vertical">
+        				
+        	            <LinearLayout
+        	                android:id="@+id/BetListMarunouchi"
+        					android:layout_width="fill_parent"
+        					android:layout_height="fill_parent"
+        					android:orientation="vertical">
+        					
+        	            </LinearLayout>
+        				
+        			</LinearLayout>
+        			
+        	        <LinearLayout
+        				android:layout_width="fill_parent"
+        				android:layout_height="fill_parent"
+        				android:orientation="vertical">
+        				        	            
+        	            <LinearLayout
+        	                android:id="@+id/BetListHibiya"
+        					android:layout_width="fill_parent"
+        					android:layout_height="fill_parent"
+        					android:orientation="vertical">
+        					
+        	            </LinearLayout>
+        				
+        			</LinearLayout>
+        			
+        	        <LinearLayout
+        				android:layout_width="fill_parent"
+        				android:layout_height="fill_parent"
+        				android:orientation="vertical">
+        				        	            
+        	            <LinearLayout
+        	                android:id="@+id/BetListTozai"
+        					android:layout_width="fill_parent"
+        					android:layout_height="fill_parent"
+        					android:orientation="vertical">
+        					
+        	            </LinearLayout>
+        				
+        			</LinearLayout>
+        			
+        	        <LinearLayout
+        				android:layout_width="fill_parent"
+        				android:layout_height="fill_parent"
+        				android:orientation="vertical">
+        				
+        	            <LinearLayout
+        	                android:id="@+id/BetListChiyoda"
+        					android:layout_width="fill_parent"
+        					android:layout_height="fill_parent"
+        					android:orientation="vertical">
+        					
+        	            </LinearLayout>
+        				
+        			</LinearLayout>
+        			
+        	        <LinearLayout
+        				android:layout_width="fill_parent"
+        				android:layout_height="fill_parent"
+        				android:orientation="vertical">
+        				        	          
+        	            <LinearLayout
+        	                android:id="@+id/BetListYurakucho"
+        					android:layout_width="fill_parent"
+        					android:layout_height="fill_parent"
+        					android:orientation="vertical">
+        					
+        	            </LinearLayout>
+        				
+        			</LinearLayout>
+        			
+        	        <LinearLayout
+        				android:layout_width="fill_parent"
+        				android:layout_height="fill_parent"
+        				android:orientation="vertical">
+        				
+        	            <LinearLayout
+        	                android:id="@+id/BetListHanzomon"
+        					android:layout_width="fill_parent"
+        					android:layout_height="fill_parent"
+        					android:orientation="vertical">
+        					
+        	            </LinearLayout>
+        				
+        			</LinearLayout>
+        			
+        	        <LinearLayout
+        				android:layout_width="fill_parent"
+        				android:layout_height="fill_parent"
+        				android:orientation="vertical">
+        				
+        	            <LinearLayout
+        	                android:id="@+id/BetListNanboku"
+        					android:layout_width="fill_parent"
+        					android:layout_height="fill_parent"
+        					android:orientation="vertical">
+        					
+        	            </LinearLayout>
+        				
+        			</LinearLayout>
+        			
+        	       	<LinearLayout
+        				android:layout_width="fill_parent"
+        				android:layout_height="fill_parent"
+        				android:orientation="vertical">
+        				
+        	            <LinearLayout
+        	                android:id="@+id/BetListFukutoshin"
+        					android:layout_width="fill_parent"
+        					android:layout_height="fill_parent"
+        					android:orientation="vertical">
+        					
+        	            </LinearLayout>
+        				
+        			</LinearLayout>
+                    
+        	    </LinearLayout>
+                    
+	        </ScrollView>
+            
+        </LinearLayout>
+                    
+    </LinearLayout>
+    
+</LinearLayout>

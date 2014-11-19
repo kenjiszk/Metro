@@ -1,25 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">MetroWars</string>
-    <string name="choose_base_line_title">拠点を選択してください</string>
-    <string name="ginza_string">銀座線</string>
-    <string name="marunouchi_string">丸ノ内線</string>
-    <string name="hibiya_string">日比谷線</string>
-    <string name="tozai_string">東西線</string>
-    <string name="chiyoda_string">千代田線</string>
-    <string name="yurakucho_string">有楽町線</string>
-    <string name="hanzomon_string">半蔵門線</string>
-    <string name="nanboku_string">南北線</string>
-    <string name="hukutoshin_string">副都心線</string>
+    <string name="app_name">ベット ザ メトロ</string>
     
-    <string name="point_label_key">POINT</string>
-    <string name="people_label_key">PEOPLE</string>
-    <string name="ranking_label_key">RANKING</string>
+    <string name="point_label_key">ポイント</string>
+    <string name="ranking_label_key">ランキング</string>
     <string name="point_label_value">0</string>
-    <string name="people_label_value">0</string>
-    <string name="ranking_label_value">1</string>
+    <string name="ranking_label_value">-</string>
     
-    <string name="checked_in_station">%1$s駅にチェックイン</string>
-    <string name="checked_in_station_recover_hp">拠点HP +%1$d</string>
-    <string name="checked_in_station_op_point">攻撃ポイント +%1$d</string>
 </resources>
